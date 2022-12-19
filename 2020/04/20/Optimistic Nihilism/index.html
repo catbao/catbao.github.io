@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    />
+    <meta name="theme-color" content="#222" />
+    <meta name="generator" content="Hexo 5.4.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon-next.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32-next.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16-next.png"
+    />
+    <link rel="mask-icon" href="/images/logo.svg" color="#222" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css" />
+    <script src="/lib/pace/pace.min.js"></script>
+
+    <script id="hexo-configurations">
+      var NexT = window.NexT || {};
+      var CONFIG = {
+        hostname: "yoursite.com",
+        root: "/",
+        scheme: "Pisces",
+        version: "7.8.0",
+        exturl: false,
+        sidebar: {
+          position: "left",
+          display: "post",
+          padding: 18,
+          offset: 12,
+          onmobile: false,
+        },
+        copycode: { enable: false, show_result: false, style: null },
+        back2top: { enable: true, sidebar: false, scrollpercent: false },
+        bookmark: { enable: false, color: "#222", save: "auto" },
+        fancybox: false,
+        mediumzoom: false,
+        lazyload: false,
+        pangu: false,
+        comments: {
+          style: "tabs",
+          active: null,
+          storage: true,
+          lazyload: false,
+          nav: null,
+        },
+        algolia: {
+          hits: { per_page: 10 },
+          labels: {
+            input_placeholder: "Search for Posts",
+            hits_empty: "We didn't find any results for the search: ${query}",
+            hits_stats: "${hits} results found in ${time} ms",
+          },
+        },
+        localsearch: {
+          enable: false,
+          trigger: "auto",
+          top_n_per_article: 1,
+          unescape: false,
+          preload: false,
+        },
+        motion: {
+          enable: true,
+          async: false,
+          transition: {
+            post_block: "fadeIn",
+            post_header: "slideDownIn",
+            post_body: "slideDownIn",
+            coll_header: "slideLeftIn",
+            sidebar: "slideUpIn",
+          },
+        },
+      };
+    </script>
+
+    <!-- <meta name="description" content="今天是2月26日" /> -->
+    <meta property="og:type" content="article" />
+    <!-- <meta property="og:title" content="2.26 随笔" /> -->
+    <meta
+      property="og:url"
+      content="http://yoursite.com/2020/02/18/%E4%BB%8A%E5%A4%A9%E9%A3%8E%E5%A5%BD%E5%A4%A7/index.html"
+    />
+    <meta property="og:site_name" content="echobao" />
+    <meta property="og:description" content="今天是2月26日..." />
+    <meta property="og:locale" content="zh_CN" />
+    <meta
+      property="article:published_time"
+      content="2020-02-26T22:48:25.000Z"
+    />
+    <meta property="article:modified_time" content="2020-02-26T22:54:09.075Z" />
+    <meta property="article:author" content="echobao" />
+    <meta name="twitter:card" content="summary" />
+
+    <link
+      rel="canonical"
+      href="http://yoursite.com/2020/02/26/%E4%BB%8A%E5%A4%A9%E9%A3%8E%E5%A5%BD%E5%A4%A7/"
+    />
+
+    <script id="page-configurations">
+      // https://hexo.io/docs/variables.html
+      CONFIG.page = {
+        sidebar: "",
+        isHome: false,
+        isPost: true,
+        lang: "zh-CN",
+      };
+    </script>
+
+    <title>simple thinking | echobao</title>
+
+    <noscript>
+      <style>
+        .use-motion .brand,
+        .use-motion .menu-item,
+        .sidebar-inner,
+        .use-motion .post-block,
+        .use-motion .pagination,
+        .use-motion .comments,
+        .use-motion .post-header,
+        .use-motion .post-body,
+        .use-motion .collection-header {
+          opacity: initial;
+        }
+
+        .use-motion .site-title,
+        .use-motion .site-subtitle {
+          opacity: initial;
+          top: initial;
+        }
+
+        .use-motion .logo-line-before i {
+          left: initial;
+        }
+        .use-motion .logo-line-after i {
+          right: initial;
+        }
+      </style>
+    </noscript>
+  </head>
+
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div class="container use-motion">
+      <div class="headband"></div>
+
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner">
+          <div class="site-brand-container">
+            <div class="site-nav-toggle">
+              <div class="toggle" aria-label="切换导航栏">
+                <span class="toggle-line toggle-line-first"></span>
+                <span class="toggle-line toggle-line-middle"></span>
+                <span class="toggle-line toggle-line-last"></span>
+              </div>
+            </div>
+
+            <div class="site-meta">
+              <a href="/" class="brand" rel="start">
+                <span class="logo-line-before"><i></i></span>
+                <h1 class="site-title">echobao</h1>
+                <span class="logo-line-after"><i></i></span>
+              </a>
+              <p class="site-subtitle" itemprop="description">
+                You are just 19, you can be anyone you want.
+              </p>
+            </div>
+
+            <div class="site-nav-right">
+              <div class="toggle popup-trigger"></div>
+            </div>
+          </div>
+
+          <nav class="site-nav">
+            <ul id="menu" class="main-menu menu">
+              <li class="menu-item menu-item-home">
+                <a href="/" rel="section"
+                  ><i class="fa fa-home fa-fw"></i>首页</a
+                >
+              </li>
+              <li class="menu-item menu-item-about">
+                <a href="/about/" rel="section"
+                  ><i class="fa fa-user fa-fw"></i>关于</a
+                >
+              </li>
+              <li class="menu-item menu-item-tags">
+                <a href="/tags/" rel="section"
+                  ><i class="fa fa-tags fa-fw"></i>标签</a
+                >
+              </li>
+              <li class="menu-item menu-item-categories">
+                <a href="/categories/" rel="section"
+                  ><i class="fa fa-th fa-fw"></i>分类</a
+                >
+              </li>
+              <li class="menu-item menu-item-archives">
+                <a href="/archives/" rel="section"
+                  ><i class="fa fa-archive fa-fw"></i>归档</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        <span>0%</span>
+      </div>
+
+      <a
+        href="https://github.com/catbao"
+        class="github-corner"
+        title="Follow me on GitHub"
+        aria-label="Follow me on GitHub"
+        rel="noopener"
+        target="_blank"
+        ><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+          <path
+            d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+            fill="currentColor"
+            style="transform-origin: 130px 106px"
+            class="octo-arm"
+          ></path>
+          <path
+            d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+            fill="currentColor"
+            class="octo-body"
+          ></path></svg
+      ></a>
+
+      <main class="main">
+        <div class="main-inner">
+          <div class="content-wrap">
+            <div class="content post posts-expand">
+              <article
+                itemscope
+                itemtype="http://schema.org/Article"
+                class="post-block"
+                lang="zh-CN"
+              >
+                <link
+                  itemprop="mainEntityOfPage"
+                  href="http://yoursite.com/2020/04/20/雨"
+                />
+
+                <span
+                  hidden
+                  itemprop="author"
+                  itemscope
+                  itemtype="http://schema.org/Person"
+                >
+                  <meta itemprop="image" content="/images/1.jpg" />
+                  <meta itemprop="name" content="echobao" />
+                  <meta itemprop="description" content="Recording myself" />
+                </span>
+
+                <span
+                  hidden
+                  itemprop="publisher"
+                  itemscope
+                  itemtype="http://schema.org/Organization"
+                >
+                  <meta itemprop="name" content="echobao" />
+                </span>
+                <header class="post-header">
+                  <h1 class="post-title" itemprop="name headline">Optimistic Nihilism</h1>
+
+                  <div class="post-meta">
+                    <span class="post-meta-item">
+                      <span class="post-meta-item-icon">
+                        <i class="far fa-calendar"></i>
+                      </span>
+                      <span class="post-meta-item-text">发表于</span>
+
+                      <time
+                        title="创建时间：2020-04-20 20:40:25 / 修改时间：22:54:09"
+                        itemprop="dateCreated datePublished"
+                        datetime="2020-04-20T16:48:25+08:00"
+                        >2020-04-20</time
+                      >
+                    </span>
+
+                    <br />
+                    <span class="post-meta-item" title="本文字数">
+                      <span class="post-meta-item-icon">
+                        <i class="far fa-file-word"></i>
+                      </span>
+                      <span class="post-meta-item-text">本文字数：</span>
+                      <span>45</span>
+                    </span>
+                    <span class="post-meta-item" title="阅读时长">
+                      <span class="post-meta-item-icon">
+                        <i class="far fa-clock"></i>
+                      </span>
+                      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                      <span>5分钟</span>
+                    </span>
+                  </div>
+                </header>
+
+                <div class="post-body" itemprop="articleBody">
+                  <p><b>如果你对之前的一百三十五亿年没有印象，那么在你身后的无数岁月对你而言也是弹指一挥间。</b></p>
+                  <p>生命只有一次，但这也给了你自由。<br>
+                  如果宇宙最后终结于沉寂，你曾经经受过的屈辱都会被遗忘，<br>
+                  你犯过的任何错误都不再重要，<br>
+                  你做过的所有坏事都归于虚无。<br>
+                  如果我们的一生是我们仅有的经历，那它也就是唯一对我们有意义的东西。<br>
+                  如果宇宙没有规则，那唯一与我们相关的就是我们自己设定的规则。<br>
+                  如果宇宙没有目的，那么就要有我们来决定它的目的。<br>
+                  人类必然会在某个时间点消失。<br>
+                  但是在那之前，我们要探索我们自身和周遭的世界。<br>
+                  我们要体会自己的感情，<br>
+                  欣赏美食、书本、日出和他人的陪伴。<br>
+                  我们可以考虑这些事情就已经非常了不起了。<br>
+                  认为我们与所有的事物都格格不入是很容易的，但这并不是真相。<br>
+                  对于宇宙来说，<br>
+                  我们和中子星、黑洞或者星云是一样的。<br>
+                  更妙的是，我们是宇宙可以思考和感受的一部分，是宇宙的核心器官。<br>
+                  我们在一个宇宙尺寸的场地里，可以自由地生活。<br>
+                  所以，我们或许追求幸福，或者在群星中建设某种理想国。<br>
+                  这不意味着我们要了解所有的一切。<br>
+                  我们不知道宇宙何以成为宇宙，<br>
+                  也不知道生命何以存在，它又是什么，<br>
+                  更不知道意识是什么，或者我们是不是宇宙中孤独的居民。<br>
+                  但是我们可以试着找到一些答案。<br>
+                  有无数的星球等待探访，无数的疾病等待治愈，<br>
+                  无数的人们需要帮助，无数的幸福等待感受， <br>
+                  当然还有永远也玩不完的游戏。<br>
+                  有如此多的事情去做。<br>
+                  总结而言，或许你已经用掉了生命的很大一部分。<br>
+                  如果这就是我们的唯一一次生命，<br>
+                  没有理由不找寻快乐，尽可能过得开心。<br>
+                  如果你让其他人的生活变得更好，那很棒；<br>
+                  如果你也为建设人类的星际帝国出了一份力，简直完美。<br>
+                  去做那些让你开心的事吧。<br>
+                  你要为自己决定生命的意义。
+                  </p>
+                  <video width="320" height="240" controls>
+                    <source src="./Optimistic Nihilism.MP4" type="video/mp4">
+              
+                  </video>
+                </div>
+
+                <div class="followme">
+                  <p>欢迎关注我的其它发布渠道</p>
+
+                  <div class="social-list">
+                    <div class="social-item">
+                      <a
+                        target="_blank"
+                        class="social-link"
+                        href="/images/wechat_channel.jpg"
+                      >
+                        <span class="icon">
+                          <i class="fab fa-weixin"></i>
+                        </span>
+
+                        <span class="label">WeChat</span>
+                      </a>
+                    </div>
+
+                    <div class="social-item">
+                      <a target="_blank" class="social-link" href="/atom.xml">
+                        <span class="icon">
+                          <i class="fa fa-rss"></i>
+                        </span>
+
+                        <span class="label">RSS</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <footer class="post-footer">
+                  <div class="post-nav"></div>
+                </footer>
+              </article>
+            </div>
+
+            <script>
+              window.addEventListener("tabs:register", () => {
+                let { activeClass } = CONFIG.comments;
+                if (CONFIG.comments.storage) {
+                  activeClass =
+                    localStorage.getItem("comments_active") || activeClass;
+                }
+                if (activeClass) {
+                  let activeTab = document.querySelector(
+                    `a[href="#comment-${activeClass}"]`
+                  );
+                  if (activeTab) {
+                    activeTab.click();
+                  }
+                }
+              });
+              if (CONFIG.comments.storage) {
+                window.addEventListener("tabs:click", (event) => {
+                  if (
+                    !event.target.matches(
+                      ".tabs-comment .tab-content .tab-pane"
+                    )
+                  )
+                    return;
+                  let commentClass = event.target.classList[1];
+                  localStorage.setItem("comments_active", commentClass);
+                });
+              }
+            </script>
+          </div>
+
+          <div class="toggle sidebar-toggle">
+            <span class="toggle-line toggle-line-first"></span>
+            <span class="toggle-line toggle-line-middle"></span>
+            <span class="toggle-line toggle-line-last"></span>
+          </div>
+
+          <aside class="sidebar">
+            <div class="sidebar-inner">
+              <ul class="sidebar-nav motion-element">
+                <li class="sidebar-nav-toc">文章目录</li>
+                <li class="sidebar-nav-overview">站点概览</li>
+              </ul>
+
+              <!--noindex-->
+              <div class="post-toc-wrap sidebar-panel"></div>
+              <!--/noindex-->
+
+              <div class="site-overview-wrap sidebar-panel">
+                <div
+                  class="site-author motion-element"
+                  itemprop="author"
+                  itemscope
+                  itemtype="http://schema.org/Person"
+                >
+                  <img
+                    class="site-author-image"
+                    itemprop="image"
+                    alt="echobao"
+                    src="/images/1.jpg"
+                  />
+                  <p class="site-author-name" itemprop="name">echobao</p>
+                  <div class="site-description" itemprop="description">
+                    Recording myself
+                  </div>
+                </div>
+                <div class="site-state-wrap motion-element">
+                  <nav class="site-state">
+                    <div class="site-state-item site-state-posts">
+                      <a href="/archives/">
+                        <span class="site-state-item-count">3</span>
+                        <span class="site-state-item-name">日志</span>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+                <div class="links-of-author motion-element">
+                  <span class="links-of-author-item">
+                    <a
+                      href="https://github.com/catbao"
+                      title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;catbao"
+                      rel="noopener"
+                      target="_blank"
+                      ><i class="fab fa-github fa-fw"></i>GitHub</a
+                    >
+                  </span>
+                  <span class="links-of-author-item">
+                    <a
+                      href="mailto:bhuaiwei@gmail.com"
+                      title="E-Mail → mailto:bhuaiwei@gmail.com"
+                      rel="noopener"
+                      target="_blank"
+                      ><i class="fa fa-envelope fa-fw"></i>E-Mail</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div id="sidebar-dimmer"></div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="beian">
+            <a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank"
+              >豫ICP备20005071号-1
+            </a>
+          </div>
+
+          <div class="copyright">
+            &copy;
+            <span itemprop="copyrightYear">2021</span>
+            <span class="with-love">
+              <i class="fa fa-heart"></i>
+            </span>
+            <span class="author" itemprop="copyrightHolder">echobao</span>
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-chart-area"></i>
+            </span>
+            <span title="站点总字数">1k</span>
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-coffee"></i>
+            </span>
+            <span title="站点阅读时长">3 分钟</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      size="300"
+      alpha="0.6"
+      zIndex="-1"
+      src="/lib/canvas-ribbon/canvas-ribbon.js"
+    ></script>
+    <script src="/lib/anime.min.js"></script>
+    <script src="/lib/velocity/velocity.min.js"></script>
+    <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+    <script src="/js/utils.js"></script>
+
+    <script src="/js/motion.js"></script>
+
+    <script src="/js/schemes/pisces.js"></script>
+
+    <script src="/js/next-boot.js"></script>
+  </body>
+</html>
