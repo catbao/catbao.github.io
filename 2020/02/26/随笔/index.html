@@ -1,492 +1,554 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    />
+    <meta name="theme-color" content="#222" />
+    <meta name="generator" content="Hexo 5.4.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon-next.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32-next.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16-next.png"
+    />
+    <link rel="mask-icon" href="/images/logo.svg" color="#222" />
 
-<link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" />
 
+    <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css" />
+    <script src="/lib/pace/pace.min.js"></script>
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+    <script id="hexo-configurations">
+      var NexT = window.NexT || {};
+      var CONFIG = {
+        hostname: "yoursite.com",
+        root: "/",
+        scheme: "Pisces",
+        version: "7.8.0",
+        exturl: false,
+        sidebar: {
+          position: "left",
+          display: "post",
+          padding: 18,
+          offset: 12,
+          onmobile: false,
+        },
+        copycode: { enable: false, show_result: false, style: null },
+        back2top: { enable: true, sidebar: false, scrollpercent: false },
+        bookmark: { enable: false, color: "#222", save: "auto" },
+        fancybox: false,
+        mediumzoom: false,
+        lazyload: false,
+        pangu: false,
+        comments: {
+          style: "tabs",
+          active: null,
+          storage: true,
+          lazyload: false,
+          nav: null,
+        },
+        algolia: {
+          hits: { per_page: 10 },
+          labels: {
+            input_placeholder: "Search for Posts",
+            hits_empty: "We didn't find any results for the search: ${query}",
+            hits_stats: "${hits} results found in ${time} ms",
+          },
+        },
+        localsearch: {
+          enable: false,
+          trigger: "auto",
+          top_n_per_article: 1,
+          unescape: false,
+          preload: false,
+        },
+        motion: {
+          enable: true,
+          async: false,
+          transition: {
+            post_block: "fadeIn",
+            post_header: "slideDownIn",
+            post_body: "slideDownIn",
+            coll_header: "slideLeftIn",
+            sidebar: "slideUpIn",
+          },
+        },
+      };
+    </script>
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
+    <meta name="description" content="今天是2月26日" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Hello World" />
+    <meta
+      property="og:url"
+      content="http://yoursite.com/2020/02/18/%E4%BB%8A%E5%A4%A9%E9%A3%8E%E5%A5%BD%E5%A4%A7/index.html"
+    />
+    <meta property="og:site_name" content="echobao" />
+    <meta property="og:description" content="今天是2月26日..." />
+    <meta property="og:locale" content="zh_CN" />
+    <meta
+      property="article:published_time"
+      content="2020-02-26T22:48:25.000Z"
+    />
+    <meta property="article:modified_time" content="2020-02-26T22:54:09.075Z" />
+    <meta property="article:author" content="echobao" />
+    <meta name="twitter:card" content="summary" />
 
-  <meta name="description" content="今天是2月26日">
-<meta property="og:type" content="article">
-<meta property="og:title" content="今天风好大">
-<meta property="og:url" content="http://yoursite.com/2020/02/18/%E4%BB%8A%E5%A4%A9%E9%A3%8E%E5%A5%BD%E5%A4%A7/index.html">
-<meta property="og:site_name" content="echobao">
-<meta property="og:description" content="今天是2月26日...">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-26T22:48:25.000Z">
-<meta property="article:modified_time" content="2020-02-26T22:54:09.075Z">
-<meta property="article:author" content="echobao">
-<meta name="twitter:card" content="summary">
+    <link
+      rel="canonical"
+      href="http://yoursite.com/2020/02/18/%E4%BB%8A%E5%A4%A9%E9%A3%8E%E5%A5%BD%E5%A4%A7/"
+    />
 
-<link rel="canonical" href="http://yoursite.com/2020/02/18/%E4%BB%8A%E5%A4%A9%E9%A3%8E%E5%A5%BD%E5%A4%A7/">
+    <script id="page-configurations">
+      // https://hexo.io/docs/variables.html
+      CONFIG.page = {
+        sidebar: "",
+        isHome: false,
+        isPost: true,
+        lang: "zh-CN",
+      };
+    </script>
 
+    <title>simple thinking | echobao</title>
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
+    <noscript>
+      <style>
+        .use-motion .brand,
+        .use-motion .menu-item,
+        .sidebar-inner,
+        .use-motion .post-block,
+        .use-motion .pagination,
+        .use-motion .comments,
+        .use-motion .post-header,
+        .use-motion .post-body,
+        .use-motion .collection-header {
+          opacity: initial;
+        }
 
-  <title>simple thinking | echobao</title>
-  
+        .use-motion .site-title,
+        .use-motion .site-subtitle {
+          opacity: initial;
+          top: initial;
+        }
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+        .use-motion .logo-line-before i {
+          left: initial;
+        }
+        .use-motion .logo-line-after i {
+          right: initial;
+        }
+      </style>
+    </noscript>
+  </head>
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div class="container use-motion">
+      <div class="headband"></div>
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner">
+          <div class="site-brand-container">
+            <div class="site-nav-toggle">
+              <div class="toggle" aria-label="切换导航栏">
+                <span class="toggle-line toggle-line-first"></span>
+                <span class="toggle-line toggle-line-middle"></span>
+                <span class="toggle-line toggle-line-last"></span>
+              </div>
+            </div>
 
-</head>
+            <div class="site-meta">
+              <a href="/" class="brand" rel="start">
+                <span class="logo-line-before"><i></i></span>
+                <h1 class="site-title">echobao</h1>
+                <span class="logo-line-after"><i></i></span>
+              </a>
+              <p class="site-subtitle" itemprop="description">
+                The website of bao
+              </p>
+            </div>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+            <div class="site-nav-right">
+              <div class="toggle popup-trigger"></div>
+            </div>
+          </div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">echobao</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">The website of bao</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-  <a href="https://github.com/catbao" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/18/%E4%BB%8A%E5%A4%A9%E9%A3%8E%E5%A5%BD%E5%A4%A7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/1.jpg">
-      <meta itemprop="name" content="echobao">
-      <meta itemprop="description" content="Recording myself">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="echobao">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          今天风好大
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-26 22:48:25 / 修改时间：22:54:09" itemprop="dateCreated datePublished" datetime="2020-02-26T16:48:25+08:00">2020-02-26</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>...</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3分钟</span>
-            </span>
-
+          <nav class="site-nav">
+            <ul id="menu" class="main-menu menu">
+              <li class="menu-item menu-item-home">
+                <a href="/" rel="section"
+                  ><i class="fa fa-home fa-fw"></i>首页</a
+                >
+              </li>
+              <li class="menu-item menu-item-about">
+                <a href="/about/" rel="section"
+                  ><i class="fa fa-user fa-fw"></i>关于</a
+                >
+              </li>
+              <li class="menu-item menu-item-tags">
+                <a href="/tags/" rel="section"
+                  ><i class="fa fa-tags fa-fw"></i>标签</a
+                >
+              </li>
+              <li class="menu-item menu-item-categories">
+                <a href="/categories/" rel="section"
+                  ><i class="fa fa-th fa-fw"></i>分类</a
+                >
+              </li>
+              <li class="menu-item menu-item-archives">
+                <a href="/archives/" rel="section"
+                  ><i class="fa fa-archive fa-fw"></i>归档</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        <span>0%</span>
+      </div>
 
-      
-      <p>可是，我不爱世俗。</p>
-      <p>想追寻，落在心间的梦。</p>
-        <p>是海子的面朝大海，春暖花开</p>
-        <p>是顾城的最狂的风，最静的海</p>
-          <p>是木心的唐诗下酒，宋词伴茶</p>
-            <p>是戴望舒的雨巷中，撑着油纸伞的丁香般的女孩</p>
-              <p>是林徽因的一身诗意千寻瀑，万古人间四月天</p>
-                <p>是余光中的那份浪漫，那份乡愁</p>
+      <a
+        href="https://github.com/catbao"
+        class="github-corner"
+        title="Follow me on GitHub"
+        aria-label="Follow me on GitHub"
+        rel="noopener"
+        target="_blank"
+        ><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+          <path
+            d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+            fill="currentColor"
+            style="transform-origin: 130px 106px"
+            class="octo-arm"
+          ></path>
+          <path
+            d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+            fill="currentColor"
+            class="octo-body"
+          ></path></svg
+      ></a>
+
+      <main class="main">
+        <div class="main-inner">
+          <div class="content-wrap">
+            <div class="content post posts-expand">
+              <article
+                itemscope
+                itemtype="http://schema.org/Article"
+                class="post-block"
+                lang="zh-CN"
+              >
+                <link
+                  itemprop="mainEntityOfPage"
+                  href="http://yoursite.com/2020/02/18/%E4%BB%8A%E5%A4%A9%E9%A3%8E%E5%A5%BD%E5%A4%A7/"
+                />
+
+                <span
+                  hidden
+                  itemprop="author"
+                  itemscope
+                  itemtype="http://schema.org/Person"
+                >
+                  <meta itemprop="image" content="/images/1.jpg" />
+                  <meta itemprop="name" content="echobao" />
+                  <meta itemprop="description" content="Recording myself" />
+                </span>
+
+                <span
+                  hidden
+                  itemprop="publisher"
+                  itemscope
+                  itemtype="http://schema.org/Organization"
+                >
+                  <meta itemprop="name" content="echobao" />
+                </span>
+                <header class="post-header">
+                  <h1 class="post-title" itemprop="name headline">
+                    Hello World
+                  </h1>
+
+                  <div class="post-meta">
+                    <span class="post-meta-item">
+                      <span class="post-meta-item-icon">
+                        <i class="far fa-calendar"></i>
+                      </span>
+                      <span class="post-meta-item-text">发表于</span>
+
+                      <time
+                        title="创建时间：2020-02-26 22:48:25 / 修改时间：22:54:09"
+                        itemprop="dateCreated datePublished"
+                        datetime="2020-02-26T16:48:25+08:00"
+                        >2020-02-26</time
+                      >
+                    </span>
+
+                    <br />
+                    <span class="post-meta-item" title="本文字数">
+                      <span class="post-meta-item-icon">
+                        <i class="far fa-file-word"></i>
+                      </span>
+                      <span class="post-meta-item-text">本文字数：</span>
+                      <span>...</span>
+                    </span>
+                    <span class="post-meta-item" title="阅读时长">
+                      <span class="post-meta-item-icon">
+                        <i class="far fa-clock"></i>
+                      </span>
+                      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                      <span>3分钟</span>
+                    </span>
+                  </div>
+                </header>
+
+                <div class="post-body" itemprop="articleBody">
+                  <p>可是，我不爱世俗。</p>
+                  <p>想追寻，落在心间的梦。</p>
+                  <p>是海子的面朝大海，春暖花开</p>
+                  <p>是顾城的最狂的风，最静的海</p>
+                  <p>是木心的唐诗下酒，宋词伴茶</p>
+                  <p>是戴望舒的雨巷中，撑着油纸伞的丁香般的女孩</p>
+                  <p>是林徽因的一身诗意千寻瀑，万古人间四月天</p>
+                  <p>是余光中的那份浪漫，那份乡愁</p>
                   <p>是苏轼的小舟从此逝，江海寄余生，那份此心安处，便是吾乡</p>
-                    <p>是《草原上的小木屋》那份自由的天性</p>
-                      <p>是《瓦尔登湖》那份静静的深刻的思索</p>
-                        <p>是《巴黎圣母院》中卡西莫多那份灵魂和人性之美</p>
-                          <p> 是《诗经》中那份简单却永恒的美好</p>
-                            <p>是马尔克斯笔下跨越半个多世纪的爱情</p>
-                              <p>是川端康成《雪国》中那份虚无之美</p>
-                                <p>是《小王子》中的玫瑰和童话般的浪漫</p>
-                                  <p> 是《边城》中那个淳朴的世外桃源</p>
-        
-                                    <p>是万里长城，是云横秦岭，是难于上青天的蜀道，是喜马拉雅的天穹，是西塞山前的白鹭，是大漠里的孤烟落日，是雷克雅未克的极光，是富士山的樱花，是瑞士红色的小火车，是荷兰紫色的薰衣草……</p>
-                                    <p>......................</p>
-        
-        <p>是灵魂的美，是人性的美，是世界的美。</p>
+                  <p>是《草原上的小木屋》那份自由的天性</p>
+                  <p>是《瓦尔登湖》那份静静的深刻的思索</p>
+                  <p>是《巴黎圣母院》中卡西莫多那份灵魂和人性之美</p>
+                  <p>是《诗经》中那份简单却永恒的美好</p>
+                  <p>是马尔克斯笔下跨越半个多世纪的爱情</p>
+                  <p>是川端康成《雪国》中那份虚无之美</p>
+                  <p>是《小王子》中的玫瑰和童话般的浪漫</p>
+                  <p>是《边城》中那个淳朴的世外桃源</p>
 
-    </div>
+                  <p>
+                    是万里长城，是云横秦岭，是难于上青天的蜀道，是喜马拉雅的天穹，是西塞山前的白鹭，是大漠里的孤烟落日，是雷克雅未克的极光，是富士山的樱花，是瑞士红色的小火车，是荷兰紫色的薰衣草……
+                  </p>
+                  <p>......................</p>
 
-    
-    
-    
-        <!-- <div class="reward-container">
-  <div></div>
-  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
-  </button>
-  <div id="qr" style="display: none;">
-      
-      <div style="display: inline-block;">
-        <img src="/images/wechatpay.jpg" alt="echobao 微信支付">
-        <p>微信支付</p>
-      </div>
-      
-      <div style="display: inline-block;">
-        <img src="/images/alipay.jpg" alt="echobao 支付宝">
-        <p>支付宝</p>
-      </div>
+                  <p>是灵魂的美，是人性的美，是世界的美。</p>
+                </div>
 
-  </div>
-</div> -->
+                <div class="followme">
+                  <p>欢迎关注我的其它发布渠道</p>
 
-        
+                  <div class="social-list">
+                    <div class="social-item">
+                      <a
+                        target="_blank"
+                        class="social-link"
+                        href="/images/wechat_channel.jpg"
+                      >
+                        <span class="icon">
+                          <i class="fab fa-weixin"></i>
+                        </span>
 
-  <div class="followme">
-    <p>欢迎关注我的其它发布渠道</p>
+                        <span class="label">WeChat</span>
+                      </a>
+                    </div>
 
-    <div class="social-list">
+                    <div class="social-item">
+                      <a target="_blank" class="social-link" href="/atom.xml">
+                        <span class="icon">
+                          <i class="fa fa-rss"></i>
+                        </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
-            <span class="icon">
-              <i class="fab fa-weixin"></i>
-            </span>
+                        <span class="label">RSS</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-            <span class="label">WeChat</span>
-          </a>
-        </div>
+                <footer class="post-footer">
+                  <div class="post-nav">
+                    <div class="post-nav-item">
+                      <a
+                        href="/2020/02/18/hello-world/"
+                        rel="prev"
+                        title="Hello World"
+                      >
+                        <i class="fa fa-chevron-left"></i> Hello World
+                      </a>
+                    </div>
+                    <div class="post-nav-item">
+                      <a
+                        href="/2021/02/26/随笔/"
+                        rel="next"
+                        title="随笔"
+                      >
+                        New start <i class="fa fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </footer>
+              </article>
+            </div>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
-  </div>
-
-
-      <footer class="post-footer">
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/02/17/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/03/02/New-start/" rel="next" title="New start">
-      New start <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
+            <script>
+              window.addEventListener("tabs:register", () => {
+                let { activeClass } = CONFIG.comments;
+                if (CONFIG.comments.storage) {
+                  activeClass =
+                    localStorage.getItem("comments_active") || activeClass;
+                }
+                if (activeClass) {
+                  let activeTab = document.querySelector(
+                    `a[href="#comment-${activeClass}"]`
+                  );
+                  if (activeTab) {
+                    activeTab.click();
+                  }
+                }
+              });
+              if (CONFIG.comments.storage) {
+                window.addEventListener("tabs:click", (event) => {
+                  if (
+                    !event.target.matches(
+                      ".tabs-comment .tab-content .tab-pane"
+                    )
+                  )
+                    return;
+                  let commentClass = event.target.classList[1];
+                  localStorage.setItem("comments_active", commentClass);
+                });
+              }
+            </script>
           </div>
-          
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+          <div class="toggle sidebar-toggle">
+            <span class="toggle-line toggle-line-first"></span>
+            <span class="toggle-line toggle-line-middle"></span>
+            <span class="toggle-line toggle-line-last"></span>
+          </div>
 
+          <aside class="sidebar">
+            <div class="sidebar-inner">
+              <ul class="sidebar-nav motion-element">
+                <li class="sidebar-nav-toc">文章目录</li>
+                <li class="sidebar-nav-overview">站点概览</li>
+              </ul>
+
+              <!--noindex-->
+              <div class="post-toc-wrap sidebar-panel"></div>
+              <!--/noindex-->
+
+              <div class="site-overview-wrap sidebar-panel">
+                <div
+                  class="site-author motion-element"
+                  itemprop="author"
+                  itemscope
+                  itemtype="http://schema.org/Person"
+                >
+                  <img
+                    class="site-author-image"
+                    itemprop="image"
+                    alt="echobao"
+                    src="/images/1.jpg"
+                  />
+                  <p class="site-author-name" itemprop="name">echobao</p>
+                  <div class="site-description" itemprop="description">
+                    Recording myself
+                  </div>
+                </div>
+                <div class="site-state-wrap motion-element">
+                  <nav class="site-state">
+                    <div class="site-state-item site-state-posts">
+                      <a href="/archives/">
+                        <span class="site-state-item-count">3</span>
+                        <span class="site-state-item-name">日志</span>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+                <div class="links-of-author motion-element">
+                  <span class="links-of-author-item">
+                    <a
+                      href="https://github.com/catbao"
+                      title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;catbao"
+                      rel="noopener"
+                      target="_blank"
+                      ><i class="fab fa-github fa-fw"></i>GitHub</a
+                    >
+                  </span>
+                  <span class="links-of-author-item">
+                    <a
+                      href="mailto:bhuaiwei@gmail.com"
+                      title="E-Mail → mailto:bhuaiwei@gmail.com"
+                      rel="noopener"
+                      target="_blank"
+                      ><i class="fa fa-envelope fa-fw"></i>E-Mail</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div id="sidebar-dimmer"></div>
         </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
+      </main>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="beian">
+            <a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank"
+              >豫ICP备20005071号-1
+            </a>
+          </div>
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="echobao"
-      src="/images/1.jpg">
-  <p class="site-author-name" itemprop="name">echobao</p>
-  <div class="site-description" itemprop="description">用来记录自己的学习和生活</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/catbao" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;catbao" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:bhuaiwei@gmail.com" title="E-Mail → mailto:bhuaiwei@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-  </div>
-
-
-
-      </div>
-
+          <div class="copyright">
+            &copy;
+            <span itemprop="copyrightYear">2021</span>
+            <span class="with-love">
+              <i class="fa fa-heart"></i>
+            </span>
+            <span class="author" itemprop="copyrightHolder">echobao</span>
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-chart-area"></i>
+            </span>
+            <span title="站点总字数">1k</span>
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-coffee"></i>
+            </span>
+            <span title="站点阅读时长">3 分钟</span>
+          </div>
+        </div>
+      </footer>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
 
+    <script
+      size="300"
+      alpha="0.6"
+      zIndex="-1"
+      src="/lib/canvas-ribbon/canvas-ribbon.js"
+    ></script>
+    <script src="/lib/anime.min.js"></script>
+    <script src="/lib/velocity/velocity.min.js"></script>
+    <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-      </div>
-    </main>
+    <script src="/js/utils.js"></script>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        
+    <script src="/js/motion.js"></script>
 
-        
-  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">豫ICP备20005071号-1 </a>
-  </div>
+    <script src="/js/schemes/pisces.js"></script>
 
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">echobao</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
-    </span>
-    <span title="站点总字数">1k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">3 分钟</span>
-</div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-</body>
+    <script src="/js/next-boot.js"></script>
+  </body>
 </html>
